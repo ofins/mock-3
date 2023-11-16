@@ -74,7 +74,6 @@ const navigateToPage = (page: number) => {
 const pageNumbers = computed(() => {
   const startPage = Math.max(1, props.currentPageNumber - Math.floor(MAX_DISPLAYED_PAGES / 2))
   const endPage = Math.min(props.totalPages, startPage + MAX_DISPLAYED_PAGES - 1)
-  console.log(startPage, endPage)
   const pages = []
   for (let i = startPage; i <= endPage; i++) {
     pages.push(i)

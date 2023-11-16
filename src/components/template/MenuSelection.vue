@@ -38,10 +38,6 @@ const scrollTo = (val) => {
     element.scrollIntoView({ behavior: 'smooth' })
   }
 }
-
-onMounted(() => {
-  // console.log(navRouterList)
-})
 </script>
 
 <style scoped></style>

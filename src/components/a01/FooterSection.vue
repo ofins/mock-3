@@ -24,6 +24,12 @@
       >
         {{ reserved }}
       </p>
+      <a
+        href="https://github.com/ofins/mock-3"
+        class="c-text-asInverse-04 m-paragraph-regular text-12px w-280px tracking-widest text-center m-0 md:w-full md:text-14px lg:text-16px cursor-pointer"
+      >
+        Github Repo Link
+      </a>
       <SocialLinks :imageSource="footerSocials" typeComponent="footer" />
     </div>
 

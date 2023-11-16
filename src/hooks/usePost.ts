@@ -11,7 +11,6 @@ export const usePost = () => {
   const totalPages = ref<number | null>()
 
   const fetchPostData = async (url: string) => {
-    console.log(url)
     try {
       const response = await getPostData(url)
       if (response.status === 200) {
@@ -34,7 +33,6 @@ export const usePost = () => {
   }
 
   const getPostListByRecords = async (totalPosts: number) => {
-    console.log(totalPosts)
     return await fetchPostData('?per_page=' + totalPosts)
   }
 
